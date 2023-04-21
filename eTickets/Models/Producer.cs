@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using System.ComponentModel.DataAnnotations;
 
 namespace eTickets.Models
 {
     public class Producer
     {
-
+        [Key]
         public int Id { get; set; }
         public int ProfilePictureUrl { get; set; }
         public int FullName { get; set; }
